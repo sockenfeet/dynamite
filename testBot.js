@@ -6,9 +6,8 @@ class Bot {
         this.enemyDynamite = 100;
         this.scores = new Map([['R', 100], ['P', 100], ['S', 100], ['W', 100], ['D', 100]]);
         this.probabilities = new Map();
-        //this.recalculateProbabilities(); //= new Map([['R', 20], ['P', 20], ['S', 20], ['W', 20], ['D', 20]]);
         this.boundaries = new Map();//
-        //this.recalculateBoundaries(); // = new Map[([['R', 20], ['P', 40], ['S', 60], ['W', 80]]);
+        this.prevOpponentMove = undefined;
     }
 
     adjustMapValueBy(map, key, i) {
